@@ -8,7 +8,10 @@
     chown unbound:unbound /var/log/unbound/unbound.log
 
 
-## Stil problem with "error: Could not open logfile /var/log/unbound/unbound.log: Permission denied"
+## AppArmor
+[AppArmor](https://www.apparmor.net/) - Linux kernel security module
+ 
+Stil problem with "error: Could not open logfile /var/log/unbound/unbound.log: Permission denied"
 So to fix the issue, we have to edit the settings:
     
     vim /etc/apparmor.d/local/usr.sbin.unbound
