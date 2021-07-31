@@ -25,5 +25,5 @@ Add this line (Here you should write a path to your "unbound.log" file. ):
 Reload apparmor config and restart unbound services:
     
     apparmor_parser -r /etc/apparmor.d/usr.sbin.unbound 
-    sudo systemctl restart unbound.service
+    systemctl restart unbound.service
 
