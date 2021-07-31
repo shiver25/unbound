@@ -20,10 +20,10 @@ Add this line (Here you should write a path to your "unbound.log" file. ):
     
     # Site-specific additions and overrides for usr.sbin.unbound.<br>
     # For more details, please see /etc/apparmor.d/local/README.<br>
-    /var/log/unbound/unbound.log rw,`
+    /var/log/unbound/unbound.log rw,
 
 Reload apparmor config and restart unbound services:
     
     apparmor_parser -r /etc/apparmor.d/usr.sbin.unbound 
-    service unbound restart
+    sudo systemctl restart unbound.service
 
